@@ -65,5 +65,8 @@ php artisan make:livewire admin.rooms.index
 php artisan make:livewire admin.bookings.index
 php artisan make:livewire admin.reports.index
 
+middleware
+bootstrap/app.php
+
 PDF FILE
 resources/views/pdf/sales-report.blade.php

@@ -44,6 +44,11 @@ php artisan migrate:fresh --seed
 
 php artisan make:auth
 
+composer require laravel/breeze --dev
+php artisan breeze:install livewire
+npm install && npm run build
+php artisan migrate
+
 
 livewire components
 php artisan make:livewire rooms.room-list

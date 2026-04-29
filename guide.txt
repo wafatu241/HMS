@@ -4,7 +4,7 @@ cd hotel-management
 
 composer require livewire/livewire
 composer require laravel/flux
-
+composer require barryvdh/laravel-dompdf
 php artisan storage:link
 
 

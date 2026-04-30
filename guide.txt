@@ -21,17 +21,21 @@ php artisan make:migration add_image_to_rooms_table
 php artisan make:migration add_check_in_out_time_to_bookings_table
 php artisan make:migration add_payment_method_to_bookings_table
 php artisan make:migration add_payment_status_to_bookings_table
-php artisan make:migration add_extension_fields_to_bookings_table
 php artisan make:migration add_downpayment_to_bookings_table
 php artisan make:migration add_real_payment_fields_to_bookings_table
+php artisan make:migration add_extension_fields_to_bookings_table
 
 php artisan migrate:fresh
 
-.env
-DB_DATABASE=hotel
-DB_USERNAME=root
-DB_PASSWORD=
+seeder
+php artisan make:seeder AdminUserSeeder
+php artisan make:seeder RoomTypeSeeder
+php artisan make:seeder RoomSeeder
+php artisan make:seeder RoomRateSeeder
 
+php artisan migrate:fresh --seed
+
+.env
 
 model
 php artisan make:model Booking
@@ -41,13 +45,7 @@ php artisan make:model RoomRate
 php artisan make:middleware AdminMiddleware
 
 
-seeder
-php artisan make:seeder AdminUserSeeder
-php artisan make:seeder RoomTypeSeeder
-php artisan make:seeder RoomSeeder
-php artisan make:seeder RoomRateSeeder
 
-php artisan migrate:fresh --seed
 
 php artisan make:auth
 

@@ -89,7 +89,7 @@ new class extends Component {
 
 }; ?>
 
-<div class="max-w-5xl mx-auto p-2  fixed top-20 left-0 right-0 z-10">
+<div class="max-w-7xl mx-auto z-10">
     <h1 class="text-3xl font-bold mb-6">Room Types</h1>
 
     @if(session()->has('success'))

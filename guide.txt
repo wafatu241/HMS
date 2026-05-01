@@ -70,8 +70,4 @@ bootstrap/app.php
 PDF FILE
 resources/views/pdf/sales-report.blade.php
 
-LoginResponse
-        return $request->wantsJson()
-           ? new JsonResponse(['two_factor' => $user->two_factor_secret ? true : false], 200)
-        : redirect()->intended(Fortify::redirects('login') ?? URL::previous());
 

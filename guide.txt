@@ -63,6 +63,7 @@ php artisan make:livewire admin.dashboard
 php artisan make:livewire admin.rooms.index
 php artisan make:livewire admin.bookings.index
 php artisan make:livewire admin.reports.index
+php artisan make:livewire dashboard
 
 middleware
 bootstrap/app.php
